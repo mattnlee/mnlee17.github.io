@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div style={{ border: "3px solid red" }}>
+    <div id="header-styling" style={{ border: "3px solid red", padding: "10px", }}>
       <ul>
         <li>
           <a href="/">Home</a>

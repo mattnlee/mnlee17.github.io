@@ -2,7 +2,7 @@ import { on } from "events";
 import { useState } from "react";
 
 function Square({ value, onSquareClick }) {
-  const dimension = 50;
+  const dimension = 100;
   return (
     <button
       className="square"
@@ -24,11 +24,12 @@ function Board({ xIsNext, squares, onPlay }) {
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
+
     const nextSquares = squares.slice();
     if (xIsNext) {
-      nextSquares[i] = "x";
+      nextSquares[i] = "X";
     } else {
-      nextSquares[i] = "o";
+      nextSquares[i] = "O";
     }
     onPlay(nextSquares);
   }

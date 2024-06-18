@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <main>
       <Header />
-      <h1>About Page</h1>
+      <h1>ABOUT</h1>
       <p>Hi there! My name is Matthew Lee. I coded this webpage.</p>
     </main>
   );
