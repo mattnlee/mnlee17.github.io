@@ -8,30 +8,43 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-body {
-  margin: 30px;
-}
-
 h1 {
   color: black;
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
   font-family: 'Lucida Sans';
+  margin: 30px;
 }
 
 p {
   color: black;
   text-size-adjust: 15px;
   font-family: 'Lucida Sans';
+  margin: 30px;
+  text-indent: 50px;
 }
 
-#footer-styling {
-  font-weight: bolder;
+#bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  width: 300%;
+  text-align: center;
+  border: 3px solid red; 
+  padding: 15px;
 }
 
-#header-styling {
+#top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  margin: 0px;
   font-family:'Lucida Sans';
+  border: 3px solid red; 
+  padding: 10px;
+  background-color: red;
 }
 
 @layer utilities {

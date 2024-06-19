@@ -10,6 +10,7 @@ function Square({ value, onSquareClick }) {
         height: dimension,
         width: dimension,
         border: "1.5px solid",
+        position: "static",
       }}
       onClick={onSquareClick}
     >
